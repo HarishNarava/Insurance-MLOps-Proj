@@ -205,3 +205,10 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+training_temp_deleteme.py
+projectflow.txt
+artifact/
+logs/
+FullProjectFlow.txt
