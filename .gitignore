@@ -212,3 +212,4 @@ projectflow.txt
 artifact/
 logs/
 FullProjectFlow.txt
+.env
