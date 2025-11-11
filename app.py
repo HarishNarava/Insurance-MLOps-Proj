@@ -13,6 +13,12 @@ from src.constants import APP_HOST, APP_PORT
 from src.pipline.prediction_pipeline import VehicleData, VehicleDataClassifier
 from src.pipline.training_pipeline import TrainPipeline
 
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except Exception:
+    pass
+
 # Initialize FastAPI application
 app = FastAPI()
 
@@ -139,6 +145,11 @@ async def predictRouteClient(request: Request):
         
     except Exception as e:
         return {"status": False, "error": f"{e}"}
+    
+@app.get("/health")
+def health():
+    return {"status": "ok"}
+
 
 # Main entry point to start the FastAPI server
 if __name__ == "__main__":
