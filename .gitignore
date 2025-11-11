@@ -213,3 +213,4 @@ artifact/
 logs/
 FullProjectFlow.txt
 .env
+rev_info.txt
