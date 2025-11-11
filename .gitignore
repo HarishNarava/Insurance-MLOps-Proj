@@ -209,8 +209,8 @@ __marimo__/
 
 training_temp_deleteme.py
 projectflow.txt
+revinfo.txt
 artifact/
 logs/
 FullProjectFlow.txt
 .env
-rev_info.txt
